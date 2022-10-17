@@ -1,0 +1,236 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    margin: 2px;
+}
+#logo img{
+     
+    height: 50px;
+    margin: 1px;
+    padding: 3px;
+    border-radius: 42%;
+}
+
+#navbar {
+    
+    background-color: rgb(14 13 13 / 37%);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#navbar::before{
+    content: "";
+    opacity: 0.8;
+    z-index: -1;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+    
+}
+#navbar ul li{
+    /* display: inline-block; */
+    list-style-type: none;
+    font-size: 1.3rem;
+    /* border-radius: 20px; */
+    /* margin: ; */
+    /* background-color: burlywood; */
+    
+    
+} 
+#navbar ul li a{
+    border-radius: 50px; 
+    border: white;
+    padding: 5px 16px;
+    display: block;
+    margin: auto;
+    color: rgb(243, 243, 252);
+    text-decoration: none;
+    
+    
+}
+
+
+#navbar ul li a:hover{
+    background-color: rgba(233, 247, 247, 0.486);
+    color: rgb(5, 5, 5);
+    cursor: pointer;
+    
+} 
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    justify-content: center;
+    padding-bottom: 90px;
+    align-items: center;
+    height: 245px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#home::before{
+    content: "";
+    background : url(../images/background.jpeg) no-repeat center center/cover;
+    background-repeat:no-repeat;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 3;
+    
+    
+}
+#home h1{
+    text-align: center;
+}
+.h-primary{
+    
+    color: white;
+    /* height: 400px; */
+}
+p{
+    color: white;
+    
+}
+.btn{
+    padding: 5px;
+    margin-top: 10px;
+    border : 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color:rgb(197, 197, 197);
+    /* font-size: 1.5rem; */
+    
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(146, 146, 146);
+    cursor: pointer;
+}
+#services{ 
+    display: flex;
+    margin: 10px;
+}
+#services .box img{
+    height: 40%;
+    margin:auto;
+    display:block;
+    padding-top: 5px;
+    
+}
+.services-container{
+    /* background-color: rgba(99, 99, 38, 0.808); */
+    /* margin: 20px  ; */
+}
+#services .box{
+    border: 2px solid rgb(82, 17, 17);
+    display: block;
+    color: rgb(34, 32, 28);
+    width: 400px;
+    height: 200px;
+    margin: 3px 4px;
+    background-color: rgb(232, 233, 233);
+    border-radius: 20px;
+}
+p.new{
+    color: rgb(56, 56, 48);
+    /* font-family: 'Baloo Bhaina 2', cursive; */
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+     padding: 0px 5px;
+
+ }
+ /* utility class */
+ .h-primary{
+     font-size: 2.3rem;
+     padding: 5px;
+     font-family: 'Bree Serif', serif;
+ }
+ .h-secondary-center{
+     font-size: 1.3rem;
+     padding: 5px;
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+ }
+ .h-secondary{
+     font-size: 1.3rem;
+     padding: 5px;
+ }
+ .h-primary-center{
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+     font-size: 2.5rem;
+     color: rgb(29, 29, 27);
+     
+    }
+    #client-section::before{
+        content: " ";
+        background: url(../images/pexels-photo-1640777.jpeg) no-repeat center center/cover;
+        height:180px;
+        width: 99.99%;
+        /* background-color:rgb(202 210 222); */
+        opacity: 35.4%;
+        position: absolute;
+        z-index: -1;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .client-item img{
+        height: 100px;
+        /* padding: 20px; */
+    }
+    .client-item{
+        padding: 5px 27px
+    }
+    #client-section{
+        padding: 2px;
+    }
+    #contact{
+        position: relative;
+        
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        background: url(../images/contact-us-1.jpg) no-repeat center center/cover;
+        opacity: 35.4%;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        padding-top: 30px;
+        margin: 9px 0px;
+    }
+    #center{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding:9px 20px;
+        
+    }
+    #contact-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 34px;
+        font-family: 'Bree Serif', serif;
+    }
+     .form-group input , textarea  {
+        width: 100%;
+        padding: 0.5rem;
+        border:2px solid rgb(121, 121, 121);
+        border-radius: 5px;
+    } 
+
+     
+    footer{
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+        margin-top: 4px;
+    }
